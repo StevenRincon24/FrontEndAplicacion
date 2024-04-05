@@ -1,13 +1,21 @@
 {
   "expo": {
-    "name": "client",
-    "slug": "client",
+    "name": "MinaGuard",
+    "slug": "minaguardV1",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/Icono.png",
     "userInterfaceStyle": "light",
+    "jsEngine": "hermes",
+    "permissions": [
+      "CAMERA_ROLL",
+      "MEDIA_LIBRARY"
+    ],
+    "plugins": [
+      "expo-image-picker"
+    ],
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/IconoAPP.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -15,16 +23,32 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.steven2411.client"
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      }
+        "foregroundImage": "./assets/IconoAPP.png",
+        "backgroundColor": "#ffffff",
+        "package": "com.steven.app_mining",
+        "versionCode": 1
+      },
+      "package": "com.steven2411.client",
+      "versionCode": 1,
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyB86yqMZahT00-qPyWxy5yq8FnP-A2l1a4"
+        }
+      },
+      "permissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.LOCATION"
+      ]
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
+    "extra": {
+      "eas": {
+        "projectId": "2cd4cfaf-c7d3-480f-bdc2-4fcb510745f0"
+      }
     }
   }
 }
