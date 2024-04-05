@@ -16,6 +16,7 @@ import Principal from '../../screens/Principal';
 import HistorialPolvoInerte from '../../screens/PolvoInerte/RegistrosPolvoInerte';
 import HistorialPolvoCarbon from '../../screens/PolvoCarbon/RegsistrosPolvoCarbon';
 import GraficaPolvoInerte from '../Graficas/GraficaPolvoInerte';
+import ResetPassword from '../../screens/auth/ResetPasword';
 const ScreenMenu = () => {
     // ESTADO GLOBAL
     const { state } = useContext(AuthContext);
@@ -103,6 +104,7 @@ const ScreenMenu = () => {
                 <>
                     <Stack.Screen name="Login" component={Login} options={{ headerShown: false }} />
                     <Stack.Screen name="Register" component={Register} options={{ headerShown: false }} />
+                    <Stack.Screen name="Reset" component={ResetPassword} options={{ headerShown: false }} />
 
                 </>
             )}

@@ -20,10 +20,10 @@ const MenuPrincipal = () => {
                     <Text style={{ color: route.name === 'Register' ? 'white' : 'black', fontWeight: 'bold' }}>Registrarse</Text>
                 </TouchableOpacity>
 
-                {/*<TouchableOpacity onPress={() => navigation.navigate('ResetPass')} style={styles.menuItem}>
-                    <FontAwesome5 name="lock-open" style={styles.iconStyle} color={route.name === 'PasswordRecovery' ? 'white' : 'black'} />
-                    <Text style={{ color: route.name === 'PasswordRecovery' ? 'white' : 'black', fontWeight: 'bold' }}>Recuperar contraseña</Text>
-                </TouchableOpacity>*/}
+                <TouchableOpacity onPress={() => navigation.navigate('Reset')} style={styles.menuItem}>
+                    <FontAwesome5 name="lock-open" style={styles.iconStyle} color={route.name === 'Reset' ? 'white' : 'black'} />
+                    <Text style={{ color: route.name === 'Reset' ? 'white' : 'black', fontWeight: 'bold' }}>Recuperar contraseña</Text>
+                </TouchableOpacity>
             </ScrollView>
         </View>
     )
